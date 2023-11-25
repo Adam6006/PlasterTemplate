@@ -12,7 +12,7 @@
     <tags></tags>
   </metadata>
   <parameters>
-    <parameter name="FunctionName" type="text" prompt="Name of your Function" />
+    <parameter name="FunctionName" type="text" prompt="Name of your Function"></parameter>
     <parameter name="PipelineSupport" type="choice" prompt="Include Begin, Process, and End blocks?" default='0'>
       <choice label="&amp;Yes" help="Adds pipeline support to the function" value="Yes" />
       <choice label="&amp;No" help="Does not add pipeline support" value="No" />
