@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.2"
+  templateType="Item" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>LCBDefaultAdvancedFunction</name>
+    <id>18c13850-475a-48d0-80ab-37e36f09728e</id>
+    <version>1.0.0</version>
+    <title>LCB IAG Advanced Function</title>
+    <description></description>
+    <author>LCB IAG</author>
+    <tags></tags>
+  </metadata>
+  <parameters>
+    <parameter name="FunctionName" type="text" prompt="Name of your Function" />
+    <parameter name="PipelineSupport" type="choice" prompt="Include Begin, Process, and End blocks?" default='0'>
+      <choice label="&amp;Yes" help="Adds pipeline support to the function" value="Yes" />
+      <choice label="&amp;No" help="Does not add pipeline support" value="No" />
+    </parameter>
+    <parameter name="ComputerName" type="choice" prompt="Add a paramater for ComputerName" default='0'>
+      <choice label="&amp;Yes" help="Adds a default parameter for ComputerName" value="Yes" />
+      <choice label="&amp;No" help="Does not include ComputerName parameter" value="No" />
+    </parameter>
+  </parameters>
+  <content>
+    <templateFile source='template.ps1' destination='${PLASTER_PARAM_FunctionName}.ps1'/>
+  </content>
+</plasterManifest>
