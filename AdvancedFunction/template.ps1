@@ -3,14 +3,26 @@
 @'
 <#
     .SYNOPSIS
-        [Synopsis Here]
+    [Synopsis Here]
 
     .DESCRIPTION
-        [Description Here]
+    [Description Here]
+'@
+%>
 
+<%
+    if ($PLASTER_PARAM_ComputerName -eq 'Yes') {
+@'
+    .PARAMETER ComputerName
+    Computer name, or array of computer names, for function to run against.
+'@
+    }
+%>
+
+<%
+@'    
     .EXAMPLE
-        [Example of how to Run Script]
-
+    [Example of how to Run Script]
 #>
 '@
 %>
@@ -21,7 +33,7 @@
     [CmdletBinding()]
     Param(
         [Parameter(
-            Mandatory=$true,
+            Mandatory=$false,
             ValueFromPipeline=$true,
             ValueFromPipelineByPropertyName=$true,
             Position=0,
