@@ -12,7 +12,38 @@
     <tags></tags>
   </metadata>
   <parameters>
-    
+    <!-- PowerShell Module Details -->
+    <parameter  name="ModuleName"
+                type="text"
+                prompt="Name of Module"/>
+
+    <parameter  name="ModuleDescription"
+                type="text"
+                prompt="Description of Module"/>
+
+    <parameter  name="ModuleVersion"
+                type="text"
+                default="0.1.0"
+                prompt="Version Number of Module"/>
+
+    <parameter  name="ModuleAuthor"
+                type="user-fullname"
+                store="text"
+                prompt="Author (Fullname)"/>
+
+    <parameter  name="ModuleCompanyName"
+                type="text"
+                store="text"
+                prompt="Company Name"/>
+
+    <parameter  name="ModuleEmail"
+                type="user-email"
+                store="text"
+                prompt="Email Address"/>
+
+    <parameter  name="ModuleDate"
+                type="text"
+                prompt="Today's Date (yyyy-MM-dd)"/>
   </parameters>
   <content></content>
 </plasterManifest>
