@@ -205,7 +205,20 @@
                 help="Does not add PSGraph support"                                                               
                 value="No"/>
     </parameter>    
-    
+
+    <!-- PSScriptAnalyzer -->
+    <parameter  name="ScriptAnalyzer"            
+                type="choice"         
+                prompt="Include ScriptAnalyzer Configuration?"                              
+                default="0">
+      <choice   label="&amp;Yes"                  
+                help="Adds ScriptAnalyzer configuration"                                                          
+                value="Yes"/>
+      <choice   label="&amp;No"                   
+                help="Does not add ScriptAnalyzer configuration"                                                  
+                value="No"/>
+    </parameter>
+
   </parameters>
   <content></content>
 </plasterManifest>
