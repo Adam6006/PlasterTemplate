@@ -180,6 +180,19 @@
                 value="No"/>
     </parameter>
 
+    <!-- PSDepend -->
+    <parameter  name="PSDepend"
+                type="choice"
+                prompt="Include PSDepend"
+                default="0">
+      <choice   label="&amp;Yes"
+                help="Adds PSDepend support file"
+                value="Yes"/>
+      <choice   label="&amp;No"
+                help="Does not add PSDepend support"
+                value="No"/>
+    </parameter>    
+
   </parameters>
   <content></content>
 </plasterManifest>
