@@ -141,7 +141,20 @@
                 value="None"/>
     </parameter>
 
+    <!-- InvokeBuild -->
+    <parameter  name="InvokeBuild"               
+                type="choice"         
+                prompt="Include InvokeBuild Script"                                         
+                default="0">
+      <choice   label="&amp;Yes"                  
+                help="Adds an invoke build script at the root of module"                                          
+                value="Yes"/>
+      <choice   label="&amp;No"                   
+                help="Does not include any invoke build scripts"                                                  
+                value="No"/>
+    </parameter>
 
+    
   </parameters>
   <content></content>
 </plasterManifest>
