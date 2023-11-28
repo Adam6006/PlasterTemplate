@@ -62,7 +62,22 @@
       <choice   label="&amp;7.4"                  
                 help="Minimum PowerShell Version required is 7.4"
                 value="7.4.0"/>
-    </parameter>                
+    </parameter>
+    <!-- License -->
+    <parameter  name="License"                   
+                type="choice"         
+                prompt="Select a license for your module:"                                  
+                default="2">
+      <choice   label="&amp;Apache"               
+                help="Adds an Apache license file."                                                               
+                value="Apache"/>
+      <choice   label="&amp;MIT"                  
+                help="Adds an MIT license file."                                                                  
+                value="MIT"/>
+      <choice   label="&amp;None"                 
+                help="No license specified."                                                                      
+                value="None"/>
+    </parameter>
   </parameters>
   <content></content>
 </plasterManifest>
