@@ -193,6 +193,19 @@
                 value="No"/>
     </parameter>    
 
+    <!-- PSGraph -->
+    <parameter  name="PSGraph"                   
+                type="choice"         
+                prompt="Include PSGraph"                                                    
+                default="0">
+      <choice   label="&amp;Yes"                  
+                help="Adds a PSGraph diagram"                                                                     
+                value="Yes"/>
+      <choice   label="&amp;No"                   
+                help="Does not add PSGraph support"                                                               
+                value="No"/>
+    </parameter>    
+    
   </parameters>
   <content></content>
 </plasterManifest>
