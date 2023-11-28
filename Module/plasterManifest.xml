@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<plasterManifest
+  schemaVersion="1.2"
+  templateType="Project" xmlns="http://www.microsoft.com/schemas/PowerShell/Plaster/v1">
+  <metadata>
+    <name>PlasterPowerShellModuleLCB</name>
+    <id>34679c44-0a82-4975-b488-680887eb73e9</id>
+    <version>1.0.0</version>
+    <title>LCB PowerShell Module Plaster Template</title>
+    <description></description>
+    <author>LCB IAG</author>
+    <tags></tags>
+  </metadata>
+  <parameters>
+    
+  </parameters>
+  <content></content>
+</plasterManifest>
