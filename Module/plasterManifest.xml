@@ -44,6 +44,25 @@
     <parameter  name="ModuleDate"
                 type="text"
                 prompt="Today's Date (yyyy-MM-dd)"/>
+
+    <!-- Minimum PowerShell Version -->        
+    <parameter  name="ModulePowerShellVersion"   
+                type="choice"         
+                prompt="Minimum PowerShell version"                                         
+                default="0">
+      <choice   label="&amp;5.1"                  
+                help="Minimum PowerShell Version required is 5.1"                                                 
+                value="5.1"/>
+      <choice   label="&amp;7.2"                  
+                help="Minimum PowerShell Version required is 7.2"
+                value="7.2.0"/>
+      <choice   label="&amp;7.3"                  
+                help="Minimum PowerShell Version required is 7.3"
+                value="7.3.0"/>
+      <choice   label="&amp;7.4"                  
+                help="Minimum PowerShell Version required is 7.4"
+                value="7.4.0"/>
+    </parameter>                
   </parameters>
   <content></content>
 </plasterManifest>
