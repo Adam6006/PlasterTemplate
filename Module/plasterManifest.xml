@@ -218,7 +218,13 @@
                 help="Does not add ScriptAnalyzer configuration"                                                  
                 value="No"/>
     </parameter>
-
   </parameters>
-  <content></content>
+  <content>
+    <!-- Static Message (Start scaffold) -->
+    <message>
+      &#10;&#10;Scaffolding your PowerShell Module...&#10;&#10;&#10;
+    </message>
+
+
+  </content>
 </plasterManifest>
