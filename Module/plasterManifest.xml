@@ -154,7 +154,19 @@
                 value="No"/>
     </parameter>
 
-    
+    <!-- Pester -->
+    <parameter  name="Pester"                    
+                type="choice"         
+                prompt="Include Pester Tests?"                                              
+                default="0">
+      <choice   label="&amp;Yes"                  
+                help="Adds a Pester folder"                                                                       
+                value="Yes"/>
+      <choice   label="&amp;No"                   
+                help="Does not add a Pester folder"                                                               
+                value="No"/>
+    </parameter>
+
   </parameters>
   <content></content>
 </plasterManifest>
