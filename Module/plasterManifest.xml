@@ -63,6 +63,7 @@
                 help="Minimum PowerShell Version required is 7.4"
                 value="7.4.0"/>
     </parameter>
+
     <!-- License -->
     <parameter  name="License"                   
                 type="choice"         
@@ -78,6 +79,20 @@
                 help="No license specified."                                                                      
                 value="None"/>
     </parameter>
+
+    <!-- Editor -->
+    <parameter  name="Editor"                    
+                type="choice"         
+                prompt="Select an editor for editor integration:"                           
+                default="0">
+      <choice   label="Visual Studio &amp;Code"   
+                help="Visual Studio Code"                                                                         
+                value="VSCode"/>
+      <choice   label="&amp;None"                 
+                help="No editor specified."                                                                       
+                value="None"/>
+    </parameter>
+
   </parameters>
   <content></content>
 </plasterManifest>
