@@ -93,6 +93,55 @@
                 value="None"/>
     </parameter>
 
+    <!-- Function Folders -->
+    <parameter  name="FunctionFolders"           
+                type="multichoice"    
+                prompt="Please select folders to be included"                               
+                default="0,1">
+      <choice   label="&amp;Public"               
+                help="Adds a public folder to module root"                                                        
+                value="Public"/>
+      <choice   label="P&amp;rivate"              
+                help="Adds a private folder to module root"                                                       
+                value="Private"/>
+      <choice   label="&amp;Classes"              
+                help="Adds a classes folder to module root"                                                       
+                value="Classes"/>
+      <choice   label="&amp;Binaries"             
+                help="Adds a bin folder to module root"                                                           
+                value="Binaries"/>
+    </parameter>
+
+    <!-- Git -->
+    <parameter  name="Git"                       
+                type="choice"         
+                prompt="Include Git Support?"                                               
+                default="0">
+      <choice   label="&amp;Yes"                  
+                help="Adds Git files"                                                                             
+                value="Yes"/>
+      <choice   label="&amp;No"                   
+                help="Does not include Git files"                                                                 
+                value="No"/>
+    </parameter>
+
+    <!-- CI/CD Support -->
+    <parameter  name="CICD"                      
+                type="choice"         
+                prompt="Do you want to include CI/CD support?"                              
+                default="">
+      <choice   label="Git&amp;Hub Actions"       
+                help="Adds a Github Actions workflow file"                                                        
+                value="GitHubActions"/> 
+      <choice   label="&amp;Gitlab CI"            
+                help="Adds a Gitlab CI yaml file"                                                                 
+                value="GitlabCI"/>
+      <choice   label="&amp;None"                 
+                help="No CI/CD support"                                                                           
+                value="None"/>
+    </parameter>
+
+
   </parameters>
   <content></content>
 </plasterManifest>
