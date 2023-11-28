@@ -166,6 +166,19 @@
                 help="Does not add a Pester folder"                                                               
                 value="No"/>
     </parameter>
+    
+    <!-- PlatyPS -->
+    <parameter  name="PlatyPS"
+                type="choice"        
+                prompt="Include PlatyPS"
+                default="0">
+      <choice   label="&amp;Yes"                  
+                help="Adds a PlatyPS for help"                                                                    
+                value="Yes"/>
+      <choice   label="&amp;No"
+                help="Does not add PlatyPS support"
+                value="No"/>
+    </parameter>
 
   </parameters>
   <content></content>
