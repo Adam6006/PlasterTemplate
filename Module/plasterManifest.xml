@@ -234,5 +234,16 @@
         source="template.psm1"                          
         openInEditor="true"/>
 
+        <newModuleManifest 
+        destination="${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}.psd1"   
+        moduleVersion="$PLASTER_PARAM_ModuleVersion"    
+        rootModule="${PLASTER_PARAM_ModuleName}.psm1"   
+        author="$PLASTER_PARAM_ModuleAuthor"    
+        description="$PLASTER_PARAM_ModuleDescription"    
+        companyName="$PLASTER_PARAM_ModuleCompanyName"    
+        powerShellVersion="$PLASTER_PARAM_ModulePowerShellVersion"    
+        encoding="UTF8-NoBOM"   
+        openInEditor="true"/>
+        
   </content>
 </plasterManifest>
