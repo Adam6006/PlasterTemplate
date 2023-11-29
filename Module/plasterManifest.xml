@@ -225,6 +225,14 @@
       &#10;&#10;Scaffolding your PowerShell Module...&#10;&#10;&#10;
     </message>
 
+    <!-- PowerShell Module Files -->    
+    <message>
+      Creating PowerShell Module Files
+    </message>
+      <templateFile 
+        destination="${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}\${PLASTER_PARAM_ModuleName}.psm1"        
+        source="template.psm1"                          
+        openInEditor="true"/>
 
   </content>
 </plasterManifest>
